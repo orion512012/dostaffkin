@@ -11,7 +11,7 @@
                 </div>
 
                 <button id="trackButton" class="button track-button" type="button"
-                    (click)="trackShipment">Отследить</button>
+                    (click)="trackShipment()">Отследить</button>
 
             </div>
         </section>
@@ -31,7 +31,8 @@
                             </svg>
                         </div>
                         <div class="track-route-address" id="trackFromValue">
-                            Откуда: {{treckResult()?.route.from}}
+
+                            Откуда: {{trackResult()?.route.from}}
                         </div>
                     </div>
                     <div class="track-route track-route-arrow">
@@ -52,7 +53,8 @@
                             </svg>
                         </div>
                         <div class="track-route-address" id="trackToValue">
-                            Куда: {{treckResult()?.route.to}}
+
+                            Куда: {{trackResult()?.route.to}}
                         </div>
                     </div>
                 </div>
