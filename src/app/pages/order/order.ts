@@ -81,6 +81,7 @@ export class Order {
     this.map.geoObjects.add(this.mapRoute);
 
     this.mapRoute.model.events.add('requestsuccess', () => {
+      
       try {
         const activeRoute = this.mapRoute.getActiveRoute();
         if (!activeRoute) {
